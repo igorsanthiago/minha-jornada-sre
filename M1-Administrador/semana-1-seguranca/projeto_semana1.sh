@@ -63,7 +63,14 @@ menu_projeto() {
 
     # Passo 2: Configuração do Firewall para SSH
     # Nota: Vamos assumir a porta 2222 como nosso padrão de segurança.
-    local PORTA_SSH="2222"
+while true; do
+	numero=$(shuf -i 1000-9999 -n 1)
+	if [[ "$numero" != "1234" && $((numero % 1000)) -ne 0 ]]; then
+		break
+	fi
+done
+
+    local PORTA_SSH="$numero"
     echo -e "\n${AZUL}[PASSO 2/3] Configurando o Firewall para a porta SSH segura (${PORTA_SSH})...${NC}"
     adicionar_porta "$PORTA_SSH"
     echo "   (Removendo o serviço 'ssh' genérico para maior segurança...)"
