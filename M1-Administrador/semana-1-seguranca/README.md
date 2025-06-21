@@ -19,7 +19,7 @@ Este diretório contém os artefatos e a documentação gerados durante a Semana
 -   `/dia-2-ssh`: Backup da configuração de hardening do SSH (`sshd_config_hardened`).
 -   `/dia-3-firewall`: Versões iniciais e anotações sobre o script de firewall.
 -   `/dia-4-fail2ban`: Backup da configuração local do Fail2Ban (`jail.local`).
--   `/dia-5-selinux`: Guia prático de troubleshooting (`troubleshooting_guide.md`) para SELinux.
+-   `/dia-5-selinux`: Guia prático de troubleshooting (`solucao_de_problemas_guia.md`) para SELinux.
 -   `projeto_semana1.sh`: A ferramenta CLI final, multifuncional, para hardening e gestão de firewall.
 
 ## 3. A Ferramenta: `projeto_semana1.sh`
