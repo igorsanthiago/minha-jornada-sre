@@ -22,12 +22,12 @@ mostrar_uso() {
     echo "Comandos:"
     echo "  menu             Executa o processo completo (updates, pacotes, firewall, fail2ban)."
     echo "  add     [porta]   Adiciona uma porta TCP ao firewall. Entra em modo interativo se a porta não for especificada."
-    echo "  remove  <porta>   Remove uma porta TCP do firewall. A porta é obrigatória."
+    echo "  remover  <porta>   Remove uma porta TCP do firewall. A porta é obrigatória."
     echo
     echo "Exemplos:"
     echo "  sudo $0 menu"
     echo "  sudo $0 add 80"
-    echo "  sudo $0 remove 80"
+    echo "  sudo $0 remover 80"
 }
 
 validar_porta() {
